@@ -1,5 +1,5 @@
 #!/bin/sh
-#last modified by vegetablebird 2018.09.19
+#last modified by vegetablebird 2020.11.10
 
 #Description: Backup current directory
 #USAGE:
@@ -16,7 +16,7 @@ then
 fi
 
 mkdir -p $path
-tar -cvf $path/$name $(ls)
+tar -cvf $path/$name .
 
 echo
 echo compressing tarball $path/$name ...
